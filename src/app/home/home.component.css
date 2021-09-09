@@ -1,0 +1,100 @@
+.container{
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#hero{
+   background-image: url(/assets/img/bggi.gif);
+   background-size: cover;
+   background-position: top center;
+   width: 100%;
+}
+
+#hero h1{
+   display: block;
+   width: fit-content;
+   font-size: 4rem;
+   color: transparent;
+   position: relative;
+   animation: text_reveal .5s ease forwards;
+   animation-delay: 1s;
+}
+
+#hero h1:nth-child(1){
+   animation-delay: 1s;
+}
+#hero h1:nth-child(2){
+   animation-delay: 2s;
+}
+#hero h1:nth-child(3){
+   animation-delay: 3s;
+}
+#hero h1 span{
+   position: absolute;
+   top:0;
+   left: 0;
+   height: 100%;
+   width: 0;
+   background-color: crimson;
+   animation: text_reveal_box 1s ease;
+   animation-delay: .5s;
+}
+#hero h1:nth-child(1) span{
+   animation-delay: .5s;
+}
+#hero h1:nth-child(2) span{
+   animation-delay: 1.5s;
+}
+#hero h1:nth-child(3) span{
+   animation-delay: 2.5s;
+}
+.phone{
+   border: 1px solid red;
+   padding: 10px 0;
+   margin-right: 5px;
+   font-size: 1rem;
+   font-weight: 500;
+   transition: all 1s ease ;
+   width: 13rem;
+}
+.phone:hover{
+   background-color: crimson;
+   opacity: 0.7;
+}
+
+#hero a{
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
+#hero a:hover{
+   color: white;
+}
+.contact{
+   display: flex;
+   align-items: baseline;
+}
+
+
+/*Keyframes*/
+@keyframes text_reveal_box{
+   50%{
+      width: 100%;
+      left: 0;
+   }
+   100%{
+      width: 0;
+      left:100%;
+   }
+}
+@keyframes text_reveal{
+   100%{
+      color:white;
+   }
+}
+/*KeyframesEnd*/

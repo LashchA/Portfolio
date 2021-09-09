@@ -1,0 +1,46 @@
+#about .about{
+   display: flex;
+   flex-direction: column-reverse;
+   text-align: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 100px 20px;
+ 
+}
+
+
+#about .col-right{
+   width: 100%;
+   margin-bottom: 10px;
+}
+#about .col-right h2{
+   font-size: 1.5rem;
+   font-weight: 500;
+   letter-spacing: .2rem;
+   margin-bottom: 10px;
+}
+
+#about .col-right p{
+   margin-bottom: 20px;
+}
+.phone{
+   border: 1px solid red;
+   font-size: 1rem;
+   font-weight: 500;
+   transition: all 1s ease ;
+  padding: 5px;
+}
+.phone:hover{
+   background-color: crimson;
+}
+
+#about .col-right a{
+   color: black;
+}
+#about .col-left .about-img img{
+   box-shadow:10px 5px 5px black;
+}
+
+.col-right .section-title span{
+   color: red;
+}
